@@ -18,7 +18,7 @@ This project is a polished, responsive wedding invitation experience with two di
 - index.html — landing page to choose a template
 - assets/css — shared and template-specific styles
 - assets/js/shared.js — reusable behavior and wedding configuration
-- template1/index.html — premium luxury template
+- template2/index.html — premium luxury template
 - template3/index.html — traditional temple-inspired template
 
 ## Editing Wedding Information
