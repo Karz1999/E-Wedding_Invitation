@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#1a1110"/>
+  <rect x="0" y="0" width="1200" height="800" fill="url(#g)"/>
+  <circle cx="900" cy="220" r="180" fill="#f8d38d" opacity="0.26"/>
+  <circle cx="250" cy="620" r="200" fill="#ffd0db" opacity="0.2"/>
+  <path d="M240 650c100-120 190-180 360-180s250 70 360 180" fill="none" stroke="#e2b65a" stroke-width="6" stroke-linecap="round"/>
+  <path d="M320 480c52-88 102-132 184-132 88 0 138 50 198 132" fill="none" stroke="#fff6e7" stroke-width="4" stroke-linecap="round" opacity="0.8"/>
+  <path d="M470 210c22 53 32 110 32 173" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.65"/>
+  <path d="M620 220c0 55-20 115-56 174" stroke="#fff" stroke-width="4" fill="none" opacity="0.5"/>
+  <text x="600" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="62" fill="#fff8ec" letter-spacing="10">Love & Celebration</text>
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5b2f2a"/>
+      <stop offset="60%" stop-color="#230f0b"/>
+      <stop offset="100%" stop-color="#130704"/>
+    </linearGradient>
+  </defs>
+</svg>
