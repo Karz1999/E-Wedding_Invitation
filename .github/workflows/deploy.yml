@@ -1,0 +1,42 @@
+# GitHub Actions workflow for deploying a static website to GitHub Pages.
+# This workflow runs only when code is pushed to the main branch.
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: pages-deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout the repository so the workflow can access the static files.
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Configure GitHub Pages for the repository.
+      # This action ensures the repo is ready for Pages deployment.
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
+      # Upload the repository root as the Pages artifact.
+      # If your website lives in a subfolder, change `path: ./` to `path: ./your-folder`.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./
+
+      # Deploy the uploaded artifact to GitHub Pages.
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
